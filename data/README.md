@@ -1,4 +1,3 @@
-
 # Data
 
 ## Dataset Source
@@ -6,34 +5,45 @@
 The dataset used in this project is the NYC Yellow Taxi Trip Record Data
 provided by the New York City Taxi and Limousine Commission (TLC).
 
-The dataset consists of monthly trip-record files in Parquet format.
-
-Source:
+The dataset is available from:
 
 https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page
 
-## Data Used
+The data is provided as monthly Parquet files containing NYC Yellow Taxi
+trip records.
 
-The project uses NYC Yellow Taxi trip records covering the period
-specified in the project analysis.
+## Data Used in the Project
 
-The raw data and processed datasets are not included in this GitHub
-repository because of their large file size.
+The project uses NYC Yellow Taxi trip records for the period covered by
+the selected project dataset.
+
+The raw data was downloaded from the NYC Taxi and Limousine Commission
+(TLC) website and processed using PySpark.
 
 ## Data Storage
 
-The data used during development and analysis was stored in Google Drive
-and accessed through Google Colab.
+Due to the large size of the dataset, the raw and processed data files
+are not included in this GitHub repository.
 
-The notebooks contain the paths and loading instructions used to access
-the data during the analysis.
+During development, the data was stored in Google Drive and accessed
+through Google Colab.
+
+The notebooks in the `notebooks/` directory contain the code used to
+load and process the data.
 
 ## Data Processing
 
-The data was processed using PySpark. The processing included:
+The data preparation process included:
 
+- Combining the required monthly Parquet files
 - Standardising column names and data types
 - Handling missing values
-- Checking invalid values
-- Removing or filtering inappropriate records
-- Preparing the data for exploratory data analysis
+- Checking for invalid values
+- Checking trip dates and trip-related variables
+- Checking passenger counts
+- Checking trip distances
+- Checking payment and rate code values
+- Preparing the cleaned dataset for exploratory data analysis
+
+The processed data was saved separately from the GitHub repository
+because of its large file size.
