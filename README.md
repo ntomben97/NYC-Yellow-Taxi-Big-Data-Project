@@ -1,9 +1,33 @@
-# NYC-Yellow-Taxi-Big-Data-Project
+# NYC Yellow Taxi Big Data Project
 
-The NYC Yellow Taxi trip dataset used in this project is not included
-in this repository because of its large size.
+## Project Overview
 
-The dataset was obtained from the NYC Taxi & Limousine Commission
-Trip Record Data and processed using Google Colab/PySpark.
+This project analyses the NYC Yellow Taxi Trip Record dataset using
+big data processing and analytical techniques.
 
-The processed data is stored separately in Google Drive.
+The project focuses on data preparation, data cleaning and
+standardisation, exploratory data analysis, and the analysis of
+taxi trip patterns.
+
+## Dataset
+
+The dataset used in this project is the NYC Yellow Taxi Trip Record
+Data provided by the New York City Taxi and Limousine Commission (TLC).
+
+Due to the large size of the dataset, the raw and processed data files
+are not included in this GitHub repository. Information about the
+dataset, its source, and data access is provided in the `data/`
+directory.
+
+## Project Structure
+
+```text
+├── README.md
+├── requirements.txt
+├── data/
+│   └── README.md
+├── notebooks/
+├── src/
+├── output/
+├── figures/
+└── report/
